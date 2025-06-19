@@ -32,7 +32,7 @@ lower_phrase = cleaned_phrase.lower()
 print(f"This is the lower phrase: {lower_phrase}")
 
 if "powerful" in cleaned_phrase:
-  print(f"The word 'powerful' is found.")
+    print(f"The word 'powerful' is found.")
 
 fun_index = cleaned_phrase.find("fun")
 print(f"Index of 'fun': {fun_index}")

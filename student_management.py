@@ -9,6 +9,7 @@ Main Features:
 - Implements error handling in course operations.
 """
 
+
 class Student:
     """
     A class to represent a student at Global Tech University.
@@ -20,6 +21,7 @@ class Student:
         major (str): Student's major field.
         courses (list): Courses the student is enrolled in.
     """
+
     school_name = "Global Tech University"
 
     def __init__(self, name, student_id, major) -> None:
@@ -52,7 +54,9 @@ class Student:
             ValueError: If course is not in enrolled list.
         """
         if course_name not in self.courses:
-            print(f"[Drop Error] '{course_name}' not found in {self.name}'s enrolled courses.")
+            print(
+                f"[Drop Error] '{course_name}' not found in {self.name}'s enrolled courses."
+            )
             return
         try:
             self.courses.remove(course_name)
@@ -92,6 +96,7 @@ class GraduateStudent(Student):
         advisor (str): Assigned advisor for thesis guidance.
         graduate_program_fee (int): Constant fee for graduate program.
     """
+
     graduate_program_fee = 5000  # Class attribute
 
     def __init__(self, name, student_id, major, thesis_topic) -> None:

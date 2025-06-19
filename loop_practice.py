@@ -1,12 +1,12 @@
-print('--- For Loop (1 to 10) ---')
+print("--- For Loop (1 to 10) ---")
 
 for i in range(1, 11):
- print(i)
+    print(i)
 
-print('--- While Loop (Even Numbers 2 to 20) ---')
+print("--- While Loop (Even Numbers 2 to 20) ---")
 
 i = 2
 while i <= 20:
- if i % 2 == 0:
-  print(i)
- i += 1
+    if i % 2 == 0:
+        print(i)
+    i += 1

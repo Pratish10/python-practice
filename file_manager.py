@@ -19,32 +19,29 @@ This example provides a clear illustration of using modes:
 
 # Writing example
 lines_to_write = [
-  "First line of text.",
-  "Second line with more details.",
-  "Third and final line for this demo."
+    "First line of text.",
+    "Second line with more details.",
+    "Third and final line for this demo.",
 ]
 
-new_lines_to_append = [
-  "\nAppended line one.",
-  "Appended line two."
-]
+new_lines_to_append = ["\nAppended line one.", "Appended line two."]
 
 with open("my_document.txt", "w") as f:
-  for i in lines_to_write:
-    f.write(f"{i}\n")
+    for i in lines_to_write:
+        f.write(f"{i}\n")
 
 print("File has been created and written: my_document.txt")
 
 print("--- Content of my_document.txt ---")
 with open("my_document.txt", "r") as f:
-  content = f.read()
-  print(content)
+    content = f.read()
+    print(content)
 
 with open("my_document.txt", "a") as f:
-  for i in new_lines_to_append:
-    f.write(i)
+    for i in new_lines_to_append:
+        f.write(i)
 
 print("--- Content After Appending ---")
 with open("my_document.txt", "r") as f:
-  content = f.read()
-  print(content)
+    content = f.read()
+    print(content)

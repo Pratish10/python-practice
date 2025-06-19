@@ -24,38 +24,37 @@ Sections:
 This script is useful for understanding how to control loop flow and use placeholders in functions.
 """
 
-
-
 print("--- Using break ---")
 
 for i in range(1, 10):
-  if i == 7:
-    print("Number 7 encountered, breaking loop.")
-    break
-  print(i)
+    if i == 7:
+        print("Number 7 encountered, breaking loop.")
+        break
+    print(i)
 
 print("--- Using continue ---")
 
 for i in range(1, 10):
-  if i in (3, 7):
-    print(f"Skipping number {i}.")
-    continue
-  print(i)
+    if i in (3, 7):
+        print(f"Skipping number {i}.")
+        continue
+    print(i)
 
 
+print("--- Using pass ---")
 
-print('--- Using pass ---')
 
 def process_data(data):
-  if data is None:
-    print("data was None but processing continues")
-    pass
+    if data is None:
+        print("data was None but processing continues")
+        pass
 
-  if type(data) is list and len(data) == 0:
-    print("Empty list received, no processing needed.")
-    return
-  else:
-    print(f"Processing data: {data}")
+    if type(data) is list and len(data) == 0:
+        print("Empty list received, no processing needed.")
+        return
+    else:
+        print(f"Processing data: {data}")
+
 
 process_data(None)
 process_data([])

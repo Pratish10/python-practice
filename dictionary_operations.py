@@ -4,11 +4,11 @@ Operations include accessing, updating, adding, deleting, and iterating keys and
 """
 
 user_profile = dict(
-  username="john doe",
-  email="johndoe@gmail.com",
-  age=24,
-  is_active=True,
-  city="Nagpur"
+    username="john doe",
+    email="johndoe@gmail.com",
+    age=24,
+    is_active=True,
+    city="Nagpur",
 )
 
 print(f"My name is: {user_profile['username']}")
@@ -24,11 +24,11 @@ del user_profile["is_active"]
 
 print(f"My profile keys are: {list(user_profile.keys())}")
 print(f"My profile values are: {list(user_profile.values())}")
-print('------ using for loop to print all the keys -------')
+print("------ using for loop to print all the keys -------")
 
 for key in user_profile:
-  print(key)
+    print(key)
 
-print('------ using for loop to print all the keys and values -------')
+print("------ using for loop to print all the keys and values -------")
 for key, value in user_profile.items():
-  print(f"Key: {key}, Value: {value}")
+    print(f"Key: {key}, Value: {value}")

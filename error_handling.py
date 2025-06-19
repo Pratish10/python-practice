@@ -32,7 +32,7 @@ except ZeroDivisionError:
 print("\n--- File Reading with Error Handling ---")
 try:
     test_file = "non_existent.txt"
-    with open(test_file, 'r') as f:
+    with open(test_file, "r") as f:
         content = f.read()
 except FileNotFoundError:
     print(f"Error: The file '{test_file}' was not found. Please make sure it exists.")

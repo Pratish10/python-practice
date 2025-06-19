@@ -1,18 +1,17 @@
 def greet_user(username):
- print(f"Welcome, {username}!")
- print("Happy Coding!")
-
+    print(f"Welcome, {username}!")
+    print("Happy Coding!")
 
 
 def calculate_rectangle_area(length, width):
- return length * width
+    return length * width
 
 
 def check_even_odd(number):
- if number % 2 == 0:
-  return f"{number} is even number"
- else:
-  return f"{number} is odd number"
+    if number % 2 == 0:
+        return f"{number} is even number"
+    else:
+        return f"{number} is odd number"
 
 
 greet_user("John Doe")

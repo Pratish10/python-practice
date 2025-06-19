@@ -1,4 +1,9 @@
-my_tasks = ["Learn Python basics", "Practice DSA", "Build a Django app", "Read documentation"]
+my_tasks = [
+    "Learn Python basics",
+    "Practice DSA",
+    "Build a Django app",
+    "Read documentation",
+]
 
 print(f"Initial tasks: {my_tasks}")
 print(f"First task: {my_tasks[0]}")
@@ -16,6 +21,6 @@ print(f"List after removing: {my_tasks}")
 print(len(my_tasks))
 
 if "Practice DSA" in my_tasks:
- print("Yes, Practice DSA is in the my_tasks list.")
+    print("Yes, Practice DSA is in the my_tasks list.")
 else:
- print("No, Practice DSA is not in the my_tasks list.")
+    print("No, Practice DSA is not in the my_tasks list.")
